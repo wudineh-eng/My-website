@@ -1,1 +1,48 @@
+.hour-phone {
+  background-color: red;
+}
 
+.nav-link {
+  color: black;
+}
+.wdnh {
+  color: gold;
+  background: black;
+}
+/* In stylesheet.css */
+
+/* Reset for body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* If you want the body to be a flex container to arrange children */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the navigation */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f1f1; /* Example background */
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-link {
+    margin: 0 10px;
+}
+
+/* The main content should grow to take remaining space */
+.main-content {
+    flex: 1;
+    /* Add any additional styling */
+}
