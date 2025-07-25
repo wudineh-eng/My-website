@@ -1,48 +1,66 @@
-.hour-phone {
-  background-color: red;
-}
-
-.nav-link {
-  color: black;
-}
-.wdnh {
-  color: gold;
-  background: black;
-}
-/* In stylesheet.css */
-
-/* Reset for body and html */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
-/* If you want the body to be a flex container to arrange children */
+/* common styles */
 body {
-    display: flex;
-    flex-direction: column;
+  background-color: #0d0b28;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
-/* Style the navigation */
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    background: #f1f1f1; /* Example background */
-    padding: 10px;
+/* navigation wrapper */
+.navigation-wrapper {
+  height: 190px;
+  background-color: #11122b;
+  color: #cbcbcb;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px;
 }
 
-.nav-links {
-    display: flex;
+/* fix misnamed property and typo */
+.left-column {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.nav-link {
-    margin: 0 10px;
+.contact-hours-wrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
 }
 
-/* The main content should grow to take remaining space */
-.main-content {
-    flex: 1;
-    /* Add any additional styling */
+/* fix wrong property name */
+.left-column .contact-hours-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.icon i {
+  font-size: 2em;
+  margin-right: 15px;
+}
+
+/* Menu links */
+.menu {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+.menu a {
+  color: purple;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.address-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
