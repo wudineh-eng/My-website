@@ -1,0 +1,7 @@
+[Flyback Circuit]
+AC_Source: 220V, 50Hz → Bridge_Rectifier → 
+Coupled_Inductors: 
+  L1 = 1.5mH (Primary), 
+  L2 = 15μH (Secondary)
+Switch: NMOS_IRF840 (Gate=PWM_65kHz)
+Diode: Diode_Schottky → Cap_470uF → Load_31Ω (28V/0.9A)
